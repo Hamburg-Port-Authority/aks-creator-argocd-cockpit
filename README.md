@@ -165,8 +165,9 @@ clusters:
     orchestrator_version: <1.27.1>
     admin_list: [<"8a70....">]
     authorized_ip_ranges: [<"1.3.5.7/32">]
-    argocd_aad_apps:
+    argocd_aad_app:
       - name: <"argocd_aks_development">
+        display_name: <"Argo CD Excelsior Developmenr">
         app_owners:
           <- "101e7...">
         logout_url: <"https://argocd.cockpit-dev.example.de:8085/auth/callback">
@@ -175,7 +176,7 @@ clusters:
         roles:
           - name: <"admin_it">
             id: <"1dc...">
-            object_id: "8a7042f2-9566-4adf-b9cd-272f39837378" #[PORTDESK]_IT43_ADM
+            object_id: <"8a70...." #IT_ADM>
     # Azure AD User related data
     azuread_user:
       name: <"svc_portdesk-excelsior-cloud-dev_devops@example.onmicrosoft.com">
